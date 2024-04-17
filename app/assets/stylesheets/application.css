@@ -14,6 +14,12 @@
  *= require_self
  */
 
+ body {
+    background-color: #a9ccbd;
+    font-family: 'Courier Prime', monospace;
+    color: #4e5e57;
+}
+
 .record {
     display: inline-block;
     margin: 2rem;
