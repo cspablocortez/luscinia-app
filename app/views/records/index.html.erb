@@ -1,14 +1,19 @@
 <p style="color: green"><%= notice %></p>
 
+<%= link_to "New record", new_record_path, style: "float: right" %>
+
 <h1>Records</h1>
 
-<div id="records">
+<div id="records" style="display: flex">
   <% @records.each do |record| %>
-    <%= render record %>
+    <div class="record">
+      
+      <a href="<%= url_for record %>">
+        <img src="<%= record.image_url %>" alt="" style="height: 300px; width: 300px;">
+      </a>
     <p>
-      <%= link_to "Show this record", record %>
+      
     </p>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New record", new_record_path %>
