@@ -7,11 +7,9 @@
 <div class="row records-grid mx-auto" id="records">
   <% @records.each do |record| %>
     <div class="col-md-4 record">
-      
       <a href="<%= url_for record %>">
         <img class="" src="<%= record.image_url %>" alt="Album image">
       </a>
-
     </div>
   <% end %>
 </div>

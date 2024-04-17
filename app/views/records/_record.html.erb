@@ -1,21 +1,10 @@
-  <div id="<%= dom_id record %>" class="col-4">
-    <p>
-      <img src="<%= record.image_url %>" alt="" style="width: 140px; height: 140px">
-    </p>
-    
-    <p>
-      <strong>Title:</strong>
-      <%= record.title %>
-    </p>
-
-    <p>
-      <strong>Artist:</strong>
-      <%= record.artist %>
-    </p>
-
-    <p>
-      <strong>Release date:</strong>
-      <%= record.release_date %>
-    </p>
-
-  </div>
+<div class="row align-items-center mb-4">
+    <div class="col-auto">
+        <img src="<%= record.image_url %>" class="custom-img" alt="Description of the image" style="width: 140px; height: 140px">
+    </div>
+    <div class="col">
+        <p class="mb-0"><strong>Title:</strong> <%= record.title %></p>
+        <p class="mb-0"><strong>Artist:</strong>  <%= record.artist %></p>
+        <p class="mb-0"><strong>Release Year:</strong> <%= record.release_date %></p>
+    </div>
+</div>
