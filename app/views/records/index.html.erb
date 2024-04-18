@@ -1,15 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
-<%= link_to "New record", new_record_path, style: "float: right" %>
+<div class="container">
 
-<h1>Luscinia | All Records</h1>
+<%= button_to new_record_path, method: :get, class: "btn btn-outline-primary float-end" do %>
+  <i class="bi-plus-lg"></i> New Record
+<% end %>
 
-<div class="row records-grid mx-auto" id="records">
-  <% @records.each do |record| %>
-    <div class="col-md-4 record">
-      <a href="<%= url_for record %>">
-        <img class="" src="<%= record.image_url %>" alt="Album image">
-      </a>
-    </div>
-  <% end %>
+<h2>All Records</h2>
+
+  <div class="row records-grid mx-auto" id="records">
+    <% @records.each do |record| %>
+      <div class="col-md-4 record">
+        <a href="<%= url_for record %>">
+          <img class="" src="<%= record.image_url %>" alt="Album image">
+        </a>
+      </div>
+    <% end %>
+  </div>
 </div>

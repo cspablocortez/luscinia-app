@@ -14,12 +14,15 @@
  *= require_self
  */
 
-
+:root {
+    --outline-color: #4e5e57;
+    --background-color: #a9ccbd;
+}
 
  body {
-    background-color: #a9ccbd;
+    background-color: var(--background-color);
     font-family: 'Courier Prime', monospace;
-    color: #4e5e57;
+    color: var(--outline-color);
 }
 
 .records-grid {
@@ -42,3 +45,12 @@
     margin-bottom: 1.5rem;
 }
 
+button {
+    border-color: var(--outline-color) !important;
+    color: var(--outline-color) !important;
+}
+
+button:hover {
+    background-color: var(--outline-color) !important;
+    color: white !important;
+}
