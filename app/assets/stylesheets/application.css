@@ -25,6 +25,15 @@
     color: var(--outline-color);
 }
 
+a {
+    color: var(--outline-color);
+}
+
+#home-link {
+    color: var(--outline-color);
+    text-decoration: none; 
+}
+
 .records-grid {
     text-align: center;
     margin: 1rem;
